@@ -20,6 +20,7 @@ public class Expense {
         this.type = type;
         this.products = products;
         this.date = LocalDate.of(year, month, dayOfMonth);
+        this.price = countPrice();
     }
 
     public Expense(String type, List<Product> products) {
